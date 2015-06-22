@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New document created with EditiX at Sun Mar 04 21:22:31 EST 2012 -->
+
+<FitnessCenter>
+    <All>
+        <Member Level="platinum">
+            <Name>Jeff</Name>
+            <FavoriteColor>lightgrey</FavoriteColor>
+            <Remark><age>26</age></Remark>
+        </Member>
+        <Member Level="gold">
+            <Name>David</Name>
+            <FavoriteColor>lightblue</FavoriteColor>
+            <Remark><age>31</age></Remark>
+        </Member>
+        <Member Level="platinum">
+            <Name>Roger</Name>
+            <FavoriteColor>lightyellow</FavoriteColor>
+            <Remark><age>32</age></Remark>
+        </Member>
+    </All>
+    <VIP>
+        <Member Level="platinum">
+            <Name>Jeff</Name>
+            <FavoriteColor>lightgrey</FavoriteColor>
+            <Remark><age>26</age></Remark>
+        </Member>
+        <Member Level="gold">
+            <Name>David</Name>
+            <FavoriteColor>lightblue</FavoriteColor>
+            <Remark><age>31</age></Remark>
+        </Member>
+    </VIP>
+</FitnessCenter>
+
+

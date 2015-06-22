@@ -1,0 +1,311 @@
+<html>
+
+<head>
+<title>The SAXON XSLT and XQuery Processor</title>
+
+</head>
+
+<body leftmargin="150" bgcolor="#ddeeff"><font face="Arial, Helvetica, sans-serif">
+
+<h1><font color="#FF0080"><big>SAXON</big><br />
+The XSLT and XQuery Processor</font></h1>
+
+<hr>
+
+<table width="100%">
+<tr><td bgcolor="#ffff00"><div align="center"><b>
+Contact Information: see 
+<a href="http://www.saxonica.com/contact/contact.xml">http://www.saxonica.com/contact/contact.xml</a></b>
+</td></tr></table> 
+
+<p>This is the home page for the Open Source SAXON XSLT processor developed by Michael Kay
+    of Saxonica Limited. It also provides information about commercial versions of the Saxon product
+    available from Saxonica.</p>
+
+<p>See also the <a href="http://sourceforge.net/projects/saxon">project page</a> for Saxon.</p>
+
+<p>Documentation for the current release of Saxon is available online at <a href="http://www.saxonica.com/documentation/">http://www.saxonica.com/documentation</a>.</p>
+
+<p>You are invited to contribute to the Saxon project Wiki pages at <a href="https://sourceforge.net/apps/mediawiki/saxon/index.php">https://sourceforge.net/apps/mediawiki/saxon/index.php</a></p>
+
+<p>The latest version of Saxon is <a href="#F9.4EE">version 9.4</a>, released on 9 December 2011. Version 9.3 remains available, and may be a safer
+    option for the time being if you have no need for the new features offered by 9.4.</p>    
+    
+<p>Since Saxon 9.2, instead of the two versions of the product (Saxon-B and Saxon-SA)
+that existed previously, there are now three editions:</p>
+
+<ul>
+    
+    <li><p><b><a href="#F9.4HE">Saxon-HE</a> (home edition)</b> is an open source product available under the Mozilla Public License.
+    It provides implementations of XSLT 2.0, XQuery 1.0, and XPath 2.0 at the basic level of conformance
+defined by W3C. It is available for both Java and .NET.</p></li>
+
+    <li><p><b><a href="#F9.4PE">Saxon-PE</a> (professional edition)</b> is a commercial product available at modest prices from
+         <a href="http://www.saxonica.com/">Saxonica Limited</a>. It adds a number of features to Saxon-HE,
+         including support for Saxon extensions and extensibility mechanisms, support for new features defined
+         in XQuery 3.0 including higher-order functions, and easier configuration of features such as localization for different languages,
+         and support for external object models such as JDOM, XOM, and DOM4J.</p></li>
+         
+    <li><p><b><a href="#F9.4EE">Saxon-EE</a> (enterprise edition)</b> is the fully-featured commercial product, essentially a renaming
+        of the previous Saxon-SA to reflect the fact that it now offers much more than just schema-awareness.
+        As well as a fully conformant XSD 1.0 and XSD 1.1 schema processor, and support for schema-aware XSLT and XQuery 
+        processing, it offers many other features including streaming in XSLT and XQuery, support for XQuery
+        updates, and advanced query optimizer, compilation of XQuery and XSLT code to Java bytecode, and much more.
+    For full details, see the <a href="http://www.saxonica.com/">Saxonica</a> web site.</p></li>
+
+</ul>
+
+<p>Saxon 9.4 on Java requires Java 5 (also known as JDK 1.5) or later. Saxon 9.1 was the last version to work with JDK 1.4.</p>
+
+<p><i>Some features of Saxon 9.4 require Java 6.</i></p>
+
+<p>Saxon 9.4 on .NET requires .NET framework 2.0 or later.</p>
+
+<p>Saxon-HE does not offer all the capabilities that were present in Saxon-B. Most notably, support for Saxon
+    extension functions and other extensions was dropped, as was the capability for writing extension functions
+    that rely on dynamic loading of Java or .NET code (a new facility for "integrated extension functions" is
+however available). Users whose code relies on these features of Saxon-B should either purchase the Professional Edition product
+    or stick with Saxon-B: the latest release of Saxon-B is 9.1.0.8, and although there are no plans to develop
+it further or maintain it, it will remain available indefinitely.</p>
+
+<hr/>
+
+
+<p>A <a href="http://www.saxonica.com/feature-matrix.html">comparison of the features available in different editions</a> 
+    of the Saxon product is available</a>.</p>
+        
+<p>A <a href="http://www.saxonica.com/documentation/changes/intro.xml">detailed history of changes in successive releases</a>
+is available.</p> 
+    
+
+<hr/>
+ 
+ 
+<p>The Saxon XSLT 1.0 processor remains available. The latest version is <a href="#F6.5.5">version 6.5.5</a>.
+    However, even if your stylesheets only require XSLT 1.0, it is probably better to run them under Saxon 9.x</p> 
+
+
+<h2>Current releases</h2>
+
+
+<h3><a name="F9.4EE">Saxon-EE 9.4</a></h3>
+
+<p>The commercial <b>Enterprise Edition</b> from Saxonica Limited, supporting XSLT 2.0, XPath 2.0,
+ XQuery 1.0, and XML Schema 1.0, together with full support of
+ XQuery Update 1.0 and XML Schema 1,1, and partial support of XQuery 3.0, XPath 3.0, and XSLT 3.0.
+</p>
+
+<p>All current releases are listed on the <a href="http://www.saxonica.com/download/download_page.xml">Saxonica download page</p>
+
+
+
+
+
+<h3><a name="F9.4PE">Saxon-PE 9.4</a></h3>
+
+<p>The commercial <b>Professional Edition</b> from Saxonica Limited, supporting XSLT 2.0, XPath 2.0,
+ and XQuery 1.0, together with selected features from XQuery 3.0, XPath 3.0, and XSLT 3.0.
+</p>
+
+<p>All current releases are listed on the <a href="http://www.saxonica.com/download/download_page.xml">Saxonica download page</a>.</p>
+
+
+<p>Source code for Saxon-PE is not available.</p>
+
+
+
+<h3><a name="F9.4HE">Saxon-HE 9.4</a></h3>
+
+<p>The most recent version of the open-source implementation of XSLT 2.0 and XPath 2.0,
+and XQuery 1.0. This provides the "basic" conformance level of these languages:
+in effect, this provides all the features of the languages except schema-aware processing.
+This version reflects the syntax of the final XSLT 2.0, XQuery 1.0, and XPath 2.0 
+ Recommendations of 23 January 2007 as amended in the second editions of those specifications where appropriate.
+</p>
+
+<p>The current maintenance release is 9.4.0.4</p>
+
+<p>There are four files available:
+a ZIP file containing executable code for the Java platform; a .EXE installer for the
+.NET platform; a resources file containing documentation and sample applications applicable
+to both platforms; and a ZIP archive of the source code for both platforms.
+ (Documentation is also available <a href="http://www.saxonica.com/documentation/index.html">online</a>)</p>
+
+</ul>
+<li><a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/9.4/saxonHE9-4-0-4J.zip/download">Download for Java (1.9 Mbytes)</a></li>
+<li><a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/9.4/SaxonHE9-4-0-4N-setup.exe/download">Download for .NET (6.1 Mbytes)</a></li>
+<li><a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/9.4/saxon-resources9-4.zip/download">Download documentation and samples) (13.1 Mbytes)</a></li>
+<li><a href="http://prdownloads.sourceforge.net/saxon/saxon9-4-0-4source.zip">Source code for Saxon-HE (3.0 Mbytes)</a></li>
+</ul>
+
+<p>From Saxon 9.4, the Subversion repository for source code is no longer maintained in SourceForge, but
+    on the Saxonica site at <a href="http://www.saxonica.co.uk/repos/archive/opensource">http://www.saxonica.co.uk/repos/archive/opensource</a>.
+    The repository does not contain the development branch of the code, only versions that have been released; it
+    is the best way of obtaining bug fixes quickly if you are prepared to build the product from source (which is not for the faint-hearted).
+
+
+<p>Note that bug fixes are typically made available in Subversion as soon as they are available, and are then consolidated
+    periodically into a maintenance release. Source code under development is <b>not</b> held in Subversion, and is not available
+    until a tested release is issued. Sometimes prereleases of new facility releases are made available for testing; these
+are announced on the saxon-help mailing list but will not generally be advertised here.</p>
+
+<p>Older releases of Saxon-HE remain available from SourceForge: see the 
+    <a href="http://sourceforge.net/projects/saxon/files/">SourceForge download page</a> for details. If you require a release that
+is no longer listed, please ask: we can't offer to support it, but in general we don't mind you using it at your own risk.</p>
+
+
+<h2>Older Products</h2>
+
+<h3>Saxon-B</h3>
+
+
+<p>The last release of Saxon-B was version 9.1.0.8. This was a complete
+and conformant implementation of the XSLT 2.0, XQuery 1.0, and XPath 2.0 
+Recommendations published on 23 January 2007 by W3C.</p>
+
+<p>Saxon 9.1.0.8 remains available
+on both the Java and .NET platforms.
+<!--It is the latest maintenance build of Saxon 9.0, which provides a large number of enhancements over
+previous releases.-->
+Changes since Saxon 9.0 are listed in the  
+<a href="http://www.saxonica.com/documentation/changes/intro.html">change log</a>. For the bug fixes
+in each successive maintenance release, see the Release Notes and Change Notes for the release
+on the SourceForge downloads page. Known bugs, including details of their clearance, are listed in the
+<a href="http://sourceforge.net/tracker/?group_id=29872&atid=397617">Bugs tracker on the SourceForge project page</a>.</p>
+
+<p>It can be downloaded from:</p>
+
+<ul>
+<li><a href="https://sourceforge.net/projects/saxon/files/Saxon-B/9.1.0.8/saxonb9-1-0-8j.zip/download">Download for Java (1.9 Mbytes)</a></li>
+<li><a href="https://sourceforge.net/projects/saxon/files/Saxon-B/9.1.0.8/saxonb9-1-0-8n.zip/download">Download for .NET (13.7 Mbytes)</a></li>
+<li><a href="https://sourceforge.net/projects/saxon/files/Saxon-B/9.1.0.8/saxonb9-1-0-8source.zip/download">Download source code for 9.1.0.7 (2.9 Mbytes)</a></li>
+<li><a href="https://sourceforge.net/projects/saxon/files/Saxon-B/9.1.0.8/saxon-resources9-1-0-1.zip/download">Download documentation and samples (11.9 Mbytes)</a>.
+     (Note, this file was first issued with Saxon-B 9.1.0.1 and the URL reflects this. The source code present in this file is the source of 9.1.0.1)</li>
+
+</ul>
+
+
+
+<h3><a name="F6.5.5">Saxon 6.5.5</a></h3>
+
+<p>The last maintanence release of Saxon's implementation of XSLT 1.0. 
+This product is mature and stable, and further developments are unlikely.</p>
+
+<p>The download includes documentation, source
+code, Java executables, and sample code.</p>
+
+<p>Known limitations of this release are listed <a href="saxon6.5.5/limitations.html"/>here</a>. This page
+will be updated with information about any new bugs that come to light.</p>
+
+<ul>
+<li><a href="saxon6.5.5/index.html">Information</a></li>
+<li><a href="saxon6.5.5/limitations.html">Limitations (up-to-date list of known bugs)</a></li>
+<li><a href="http://prdownloads.sourceforge.net/saxon/saxon6-5-5.zip">Download (3265 Kbytes)</a></li>
+</ul>
+
+<h3><a name="F6.5.3">Saxon 6.5.3</a></h3>
+
+<p>The previous release of Saxon's implementation of XSLT 1.0. This product remains available because
+it runs in some environments that are not supported by Saxon 6.5.5, notably under JDK 1.1.</p>
+
+<p>The download includes documentation, source
+code, Java executables, and sample code.</p>
+
+<p>Known limitations of this release are listed <a href="saxon6.5.3/limitations.html"/>here</a>.
+<i>No further updates will be made to this page.</i></p>
+
+<ul>
+<li><a href="saxon6.5.3/index.html">Information</a></li>
+<li><a href="http://prdownloads.sourceforge.net/saxon/saxon6_5_3.zip">Download (3046 Kbytes)</a></li>
+</ul>
+
+<h3><a name="I6.5.3">Instant Saxon 6.5.3</a></h3>
+
+<p>The most recent version of the Instant Saxon product. Instant Saxon was built using
+the same source code as Saxon 6.5.3, but was packaged for ease of installation when using
+the Microsoft Java VM. Since the Microsoft Java VM is no longer a standard component of the
+Windows platform, this release has outlived its usefulness, but it remains available
+for download by existing users.</p>
+
+
+<ul>
+<li><a href="saxon6.5.3/instant.html">Information</a></li>
+<li><a href="http://prdownloads.sourceforge.net/saxon/instant_saxon6_5_3.zip">Download (401 Kbytes)</a></li>
+</ul>
+
+<h3>Other products</h3>
+
+<p>There is a custom Ant task for invoking Saxon XSLT transformations. This was previously issued as part
+    of the Saxon product but has now been separated into a separate package under the Saxon SourceForge project.
+    It is no longer actively developed and is not recommended (there are a number of bugs, and it is difficult
+    to improve the quality because of an absence of test material). The download is
+<a href="https://sourceforge.net/project/showfiles.php?group_id=29872&package_id=282299">here</a>.</p>
+
+<p>The <a href="aelfred.html">&AElig;lfred XML Parser</a> that was bundled with Saxon versions
+up to version 7.1 is now available as a separate download. It is of historic interest only.</p>
+
+<p>Also available on this site is the <a href="dtdgen.html">DTDGenerator</a> program. This was formerly
+produced as a Saxon demonstration application, but has since been adapted to work as a pure
+SAX application, with no dependencies on the Saxon software.</p>
+
+<p>Documentation for earlier releases remains present on the SourceForge web site:
+<a href="saxon6.4.2">6.4.2</a>, 
+<a href="saxon6.4.3">6.4.3</a>,
+<a href="saxon6.5">6.5</a>,
+<a href="saxon6.5.1">6.5.1</a>,
+<a href="saxon6.5.2">6.5.2</a>,
+<a href="saxon6.5.3">6.5.3</a>,
+<a href="saxon6.5.4">6.5.4</a>,
+<a href="saxon6.5.5">6.5.5</a>,
+<a href="saxon7.0">7.0</a>,
+<a href="saxon7.1">7.1</a>,
+<a href="saxon7.2">7.2</a>,
+<a href="saxon7.3">7.3</a>,
+<a href="saxon7.3.1">7.3.1</a>,
+<a href="saxon7.4">7.4</a>,
+<a href="saxon7.5">7.5</a>,
+<a href="saxon7.5.1">7.5.1</a>,
+<a href="saxon7.6">7.6</a>,
+<a href="saxon7.7">7.7</a>,
+<a href="saxon7.8">7.8</a>,
+<a href="saxon7.9">7.9</a>,
+<a href="saxon7.9.1">7.9.1</a></p>
+
+<p>For releases from 8.0 onwards, the documentation is not available directly
+on the web site, but can be obtained by downloading the software.</p>
+
+<p><a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=29872&amp;type=4" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a></p>
+
+<hr/>
+<h2>Saxon known errors</h2>
+
+<p>All known bugs are logged in the 
+    <a href="https://sourceforge.net/tracker2/?group_id=29872&atid=397617">SourceForge bugs tracker</a>.</p>
+
+<p>This page provides links to these bug entries, largely in the hope that this will enable search
+engines to find them more easily. Note that bugs are listed under the release where they were first
+encountered; in some cases the bug may also be present in previous releases, and in a very small number
+of cases also in later releases.</p>
+
+<ul>
+<li><p><a href="https://sourceforge.net/tracker/?limit=100&func=&group_id=29872&atid=397617&assignee=&status=&category=&artgroup=931730&keyword=&submitter=&artifact_id=&assignee=&status=&category=&artgroup=931730&submitter=&keyword=&artifact_id=&submit=Filter&mass_category=&mass_priority=&mass_resolution=&mass_assignee=&mass_artgroup=&mass_status=&mass_cannedresponse="    
+>Bugs in Saxon 9.2</a></p></li>    
+<li><p><a href="https://sourceforge.net/tracker2/?limit=100&func=&group_id=29872&atid=397617&assignee=&status=&category=&artgroup=857502&keyword=&submitter=&artifact_id=&limitz=50&assignee=&status=&category=&artgroup=857502&submitter=&keyword=&artifact_id=&submit=Filter&limitz=100&mass_category=&mass_priority=&mass_resolution=&mass_assignee=&mass_artgroup=&mass_status=&mass_cannedresponse="
+>Bugs in Saxon 9.1</a></p></li>
+<li><p><a href="https://sourceforge.net/tracker2/?limit=100&func=&group_id=29872&atid=397617&assignee=&status=&category=&artgroup=857502&keyword=&submitter=&artifact_id=&limitz=100&assignee=&status=&category=&artgroup=774627&submitter=&keyword=&artifact_id=&submit=Filter&limitz=100&mass_category=&mass_priority=&mass_resolution=&mass_assignee=&mass_artgroup=&mass_status=&mass_cannedresponse="
+>Bugs in Saxon 9.0 (1-100)</a></p></li>
+<li><p><a href="https://sourceforge.net/tracker2/?words=tracker_browse&sort=open_date&sortdir=desc&offset=100&group_id=29872&atid=397617&assignee=&status=&category=&artgroup=774627&keyword=&submitter=&artifact_id="
+>Bugs in Saxon 9.0 (101-110)</a></p></li>
+<li><p><a href="https://sourceforge.net/tracker2/?limit=100&func=&group_id=29872&atid=397617&assignee=&status=&category=&artgroup=774627&keyword=&submitter=&artifact_id=&limitz=100&assignee=&status=&category=&artgroup=690306&submitter=&keyword=&artifact_id=&submit=Filter&limitz=100&mass_category=&mass_priority=&mass_resolution=&mass_assignee=&mass_artgroup=&mass_status=&mass_cannedresponse="
+>Bugs in Saxon 8.9</a></p></li>
+<li><p><a href="https://sourceforge.net/tracker2/?limit=100&func=&group_id=29872&atid=397617&assignee=&status=&category=&artgroup=690306&keyword=&submitter=&artifact_id=&limitz=100&assignee=&status=&category=&artgroup=637320&submitter=&keyword=&artifact_id=&submit=Filter&limitz=100&mass_category=&mass_priority=&mass_resolution=&mass_assignee=&mass_artgroup=&mass_status=&mass_cannedresponse="
+>Bugs in Saxon 8.8</a></p></li>
+</ul>
+
+<hr/>
+<p align="center">Michael H. Kay <br>
+20 December 2011</p>
+
+
+</body>
+</html>

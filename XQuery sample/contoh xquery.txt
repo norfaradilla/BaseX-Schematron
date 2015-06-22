@@ -1,0 +1,30 @@
+let $source := doc('XMLdata/commAncs.xml')
+return
+    (
+    		delete node $source/outer/main/a/b,
+		    delete node $source/outer/main/c/d
+    )
+
+
+let $source := doc('XMLdata/fitness2.xml')
+return
+    (
+    		delete node $source/FitnessCenter/Member[1]/Name,
+		delete node $source/FitnessCenter/Member[2]/Remark
+    )
+
+--------YANG NI OK-----
+
+delete node FitnessCenter/Member[1]/Name,
+delete node FitnessCenter/Member[2]/Remark
+-----------------------
+
+
+insert node SUKAAKULAAA into FitnessCenter/Member[2]/Remark
+
+//---------------------------------------------
+mondial:
+
+delete node mondial/continent[1]
+
+delete node mondial/country[1]/city/population

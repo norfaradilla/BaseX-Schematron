@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//XML-DEV//DTD XHTML RDDL 1.0//EN" 
+    "http://www.rddl.org/rddl-xhtml.dtd" >
+<html 	xmlns="http://www.w3.org/1999/xhtml" 
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:rddl="http://www.rddl.org/">
+<head>
+	<title>Resource Directory for Schematron 1.5</title>
+        <link href="http://www.rddl.org/xrd.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Resource Directory (RDDL) for 
+<font color="FF0080">Schematron 1.5</font></h1>
+<div class="head">
+<p><a href="http://www.ascc.net/xml/resource/schematron/schematron1-5.rddl">This version</a>: December 18, 2006</p>
+<p><a href="http://www.ascc.net/xml/schematron/">Latest Version</a></p>
+<p>Editor:</p>
+<ul> 
+
+<li>Rick Jelliffe, <tt>ricko (at) topologi.com</tt>,
+for 
+ <a href="http://www.ascc.net">Academia Sinica Computing Centre</a></li>
+</ul>
+<p><b>NOTE:</b> Schematron is now an <a href="https:/www.schematron.com">ISO Standard
+</a>. Schematron 1.5 users should consider moving over to 
+Schematron 1.6 (which has variables and abstract patterns) 
+in 2006 and to ISO Schematron (which has a different namespac)
+in 2007.</p>
+<center><img src="http://www.ascc.net/xml/resource/schematron/bilby.jpg"
+/></center>
+</div>
+<div id="overview">
+<h2>Overview</h2>
+<p>The Schematron is a language and toolkit for making 
+assertions about patterns found in XML documents. 
+It can be used as a friendly validation language and 
+for automatically generating external annotation (links, RDF, perhaps
+Topic Maps). 
+Because it uses paths rather than grammars, it can be used
+to assert many constraints that cannot be expressed
+by DTDs or XML Schemas.</p> 
+<p>Schematron 1.5 can be trivially implemented using XSLT in two stages.
+</p>
+<ul>
+ <li><a href="http://uche.ogbuji.net/tech/4Suite/scimitar/">Scimitar</a>
+is a Python implementation of draft ISO Schematron</li>
+<li>For .NET users, <a href=
+"http://sourceforge.net/projects/dotnetopensrc/">Schematron.NET</a>
+is an open source implementation at Source Forge.</li>
+<li>IBM have added Schematron to their 
+<a href="http://glass.ipe.tsukuba.ac.jp/%7Es011304/cgi/nph-proxy.cgi/010100A/http/www.alphaworks.ibm.com/tech/biics4j">Alphaworks</a> technology
+<a href="http://glass.ipe.tsukuba.ac.jp/%7Es011304/cgi/nph-proxy.cgi/010100A/http/xml.coverpages.org/IBM-BIICS.html">Business Integration Information Conformance Statements</a>. 
+
+</li>
+<li>The JAXEN XPath engine for Java may be 
+optimized for
+<a href="http://glass.ipe.tsukuba.ac.jp/~s011304/cgi/nph-proxy.cgi/010100A/http/jira.codehaus.org/browse/JAXEN-31">better Schematron performance</a>.
+</li>
+
+<li>A JUnit-related open source project
+<a href="http://sut.sourceforge.net/">Schema Unit Test</a>
+allows Schematron schemas.</li>
+<li>Open GIS (Geographical Information
+Systems) has added Schematron as a constraint language
+to their
+<a href="http://glass.ipe.tsukuba.ac.jp/%7Es011304/cgi/nph-proxy.cgi/010100A/http/xml.coverpages.org/ni2004-03-26-a.html">Geography Markup Language</a>.</li>
+ <li><a href="http://www.topologi.com">Topologi Professional Edition</a>
+ is an analytics and reporting tool,
+including editor, that allows Schematron validation of XML and SGML documents.
+Multiple documents can be validated in batch. 
+Document sets can be sampled, and a Schematron "usage schema"
+generated, to allow testing that new documents have the same
+structure as previous documents. Schematron validation is also possible
+from the context-sensitive tree editor, and the markup editor.
+</li>
+ <li>James Clarks' <a href="http://www.thaiopensource.com/relaxng/jing.html"
+>Jing</a> librrary supports RELAX NG, WXS datatypes, Schematron, NRL
+and (through Xerces) WXS.</li>
+  <li>The <a href="http://www.topologi.com">Topologi XML Judge</a>
+is GUI-based tool for Windows. It is useful for checking
+large numbers of files, for developing schemas and for second 
+opinions on other Schema tools.</li>
+  <li>The <a href="mailto:info@topologi.com">Topologi Schematron
+Validator</a> is GUI-based tool for Windows, free for
+educational and charity uses. It is useful for checking
+large numbers of files, for developing schemas and for experimentation.
+It supports Schematron, RELAX NG, Examplotron, WXS, XML DTD, SGML DTDs.
+It supports Schematron schemas embedded in WXS or RELAX NG Schemas.
+</li>
+  <li>The <a href="http://www.topologi.com">Topologi Collaborative Markup
+Editor</a> is an XML editor for Windows, Mac OS X and Linux. 
+It supports Schematron, RELAX NG, Examplotron, WXS, XML DTD, SGML DTDs.
+It supports Schematron schemas embedded in WXS or RELAX NG Schemas.
+</li>
+<li>The <a href="http://www.topologi.com">Topologi Proxy Validator</a>
+supports Schematron and WXS.</li>
+<li>The <a href="https://www.oxygenxml.com/">OxygenXML</a> editor
+supports Schmematron 1.5 validation</li>
+  <li>The reference <a href="1.5">Academia Sinica Computing Centre
+Schematron 1.5</a> implementation
+sits on top of any XSTL implementation. It is useful if you want
+to create command-line or batch tools, and you want to tailor the
+output.</li>
+  <li>The <a href="http://www.zvon.org/Temp/Schematron2/zvonSchematron2.tgz"
+  >ZVON Schematron</a> is an alternative
+implementation for XSLT. It provides simple output mapping, and is
+straight-forward and well-coded.</li>
+  <li>The FourThought <a href="http://4suite.org/4Suite.org/documents/4SuiteServer/features"
+   >4Suite</a> is a Python-based server system which offers
+   Schematron validation.</li>
+  <li>For Perl users, Kip Hampton's
+   <a href="http://www.hampton.ws/download/">XML::Schematron</a>  modules bring Schematron functionality 
+   as a Perl module.</li>
+	<li>For C++ users, Ivelin Ivanov's
+	<a href="http://xml.apache.org/cocoon/userdocs/concepts/xmlform.html"
+	>Xmlform</a> is a Java implementation forming part of
+	Apache's validation components, and is based on JXpath
+	It is reported to be much faster than XSLT-based implementations.</li>
+	<li>For .NET developers, Daniel Cazzulino's Open Source
+<a href="http://sourceforge.net/projects/dotnetopensrc/"
+>Schematron.NET</a> is a C# implementation.
+	It is reported to be much faster than XSLT-based implementations.
+	</li>
+    <li>For iteractive editing with Schematron, use the
+Academia Sincia Schematron in conjunction with James Clark's
+<a href="http://www.jclark.com">XT</a> XSLT processor.
+XT provides line numbers in the standard format used by
+FSF GNU Emacs, Edinburgh's XED editor, and many others.
+</li>
+</ul>
+<p>A range of implementations are available for various situations:
+</p>
+<p>
+Schematron can be used in any language for which there is
+an XSLT implementation available (e.g. FourThought's Python
+version of XSLT, Java, C++, Perl) and it is also possible
+to create a native implementation without using XSLT.
+Early versions were prototyped using OmniMark.
+</p>
+<p>This document is a <a href="http://www.rddl.org/">RDDL</a>
+Resource Directory Description for Schematron 1.5, 
+which is an XHTML document with special XLinks that 
+locate various resources useful for Schematron, including
+schemas (Schematron, DTD, XML Schema).</p> 
+
+</div>
+<h2>Related Resources for Schematron</h2>
+<div id="schematron" class="resource">
+<rddl:resource
+	xlink:title="Schematron 1.5 Specification"
+	xlink:role="http://www.w3.org/1999/xhtml"
+	xlink:arcrole="http://www.rddl.org/purposes.htm#normative-reference"
+	xlink:href="http://www.ascc.net/xml/resource/schematron/Schematron2000.html"
+	>
+	<h3>Schematron 1.5 specification</h3>
+	<p>The Schematron 1.5 <a href="http://www.ascc.net/xml/resource/schematron/Schematron2000.html">spec</a> </p>
+</rddl:resource>
+<rddl:resource
+	xlink:title="Schematron Root Namespace"
+	xlink:role="http://www.rddl.org/#role"
+	xlink:arcrole="http://www.rddl.org/purposes.htm#root-namespace"
+	xlink:href="http://www.ascc.net/xml/schematron"
+	>
+	<h3>Well known URI</h3>
+	<p>The well known URI for Schematron is <code>http://www.ascc.net/xml/schematron</code>.</p>
+	<h3>Root namespace URI</h3>
+		<p><code>http://www.ascc.net/xml/schematron</code> is the namespace of the root 
+		element of a schematron schema.</p>
+</rddl:resource>
+</div>
+<div id="home" class="resource">
+<rddl:resource
+	xlink:title="Schematron Home Page"
+	xlink:role="http://www.w3.org/1999/xhtml"
+	xlink:arcrole="http://www.rddl.org/purposes.htm#non-normative-reference"
+	xlink:href="http://www.ascc.net/xml/resource/schematron/schematron.html"
+	>
+	<h3>Schematron Home Page</h3>
+	<p>The original home page for Schematron at <a href="http://www.ascc.net/xml/resource/schematron/schematron.html">Academia Sinica</a>.
+This page has details of various implementations.</p>
+</rddl:resource>
+<!--rddl:resource
+	xlink:title="Schematron Project Page"
+	xlink:role="http://www.w3.org/TR/html4/"
+	xlink:arcrole="http://www.rddl.org/purposes.htm#non-normative-reference"
+	xlink:href="http://www.sourceforge.net/projects/schematron"
+	>
+	<h3>Planned Schematron Project Page</h3>
+       <p>We are planning to move Schematron to the Open Source 
+      collaborative site <a href="www.sourceforge.net/projects/schematron"
+     >Source Forge</a> in 2001.</p>
+</rddl:resource-->
+</div>
+<div id="schematron" class="resource">
+<rddl:resource
+	xlink:title="Schematron 1.5 Reference Implementation for XSLT"
+	xlink:role="http://www.w3.org/TR/html4/"
+	xlink:arcrole="http://www.rddl.org/purposes.htm#software-project"
+	xlink:href="http://www.ascc.net/xml/schematron/1.5"
+	>
+	<h3>Schematron 1.5 Reference Implementation for XSLT</h3>
+<p>The reference implementation is a
+<a href="http://www.ascc.net/xml/schematron/1.5">software project</a>
+based around
+<tt>skeleton1-5.xsl</tt>.
+It has been
+tried on 12 different  and the test results are available on that page,
+togther with API documentation and samples of .BAT files
+for running the code with various XSLT processors.</p>
+<p>Various tools include an 
+<a href="1.5/report1-5/schematron-frame.html">error browser</a> and a validator
+for interactive debugging in editors.</p>
+<p><small>Schematron 1.5 tools are still being ported from 1.3. 
+Some implementations at the Sinica site are pre-1.5 (see below). 
+These are should be fine for schemas that just use patterns, rules,
+asserts, reports and names. 
+</small></p> 
+</rddl:resource>
+</div>
+<div id="schematron" class="resource">
+<rddl:resource
+	xlink:title="Schematron 1.3 Reference Implementation for XSLT"
+	xlink:role="http://www.w3.org/TR/html4/"
+	xlink:arcrole="http://www.rddl.org/purposes.htm#software-project"
+	xlink:href="http://www.ascc.net/xml/schematron/1.3/old-index.html"
+	>
+	<h3>Schematron 1.3 Reference Implementation for XSLT</h3>
+	<p>Schematron 1.3 <a href="http://www.ascc.net/xml/schematron/1.3/old-index.html">software project</a> and earlier tools and schemas </p>
+</rddl:resource>
+</div>
+<div class="resource" id="SCH">
+<rddl:resource
+	   xlink:title="Schematron schema for validation"
+	   xlink:arcrole="http://www.rddl.org/purposes#schema-validation"
+	   xlink:role="http://www.ascc.net/xml/schematron"
+	   xlink:href="schematron1-5.sch"
+	   >
+<h3>Schematron 1.5 Schema for Schematron 1.5</h3>
+<p>A <a href="schematron1-5.sch">Schematron Schema</a> for Schematron 1.5.
+If possible, please use your own local or cached copy.</p> 
+</rddl:resource>
+</div>
+
+<div class="resource" id="XSD">
+<rddl:resource
+	   xlink:title="XML Schema for validation"
+	   xlink:arcrole="http://www.rddl.org/purposes#schema-validation"
+	   xlink:role="http://www.w3.org/2000/10/XMLSchema"
+	   xlink:href="schematron1-5.xsd"
+	   >
+<h3>XML Schema for Schematron 1.5</h3>
+<p>An <a href="schematron1-5.xsd">XML Schema</a> for Schematron 1.5.
+If possible, please use your own local or cached copy.</p> 
+<p>To help systems that do not understand RDDL, 
+put the following attributes on the sch:schema element:</p>
+<pre>
+       xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+       xsi:schemaLocation="http://www.ascc.net/xml/schematron
+          http://www.ascc.net/xml/schematron/schematron1-5.xsd" 
+</pre>
+
+</rddl:resource>
+</div>
+
+<div class="resource" id="DTD">
+<rddl:resource
+	   xlink:title="DTD for validation"
+	   xlink:arcrole="http://www.rddl.org/purposes#validation"
+	   xlink:role="http://www.rddl.org/roles#DTD"
+	   xlink:href="schematron1-5.dtd"
+	   >
+<h3>XML DTD for Schematron 1.5</h3>
+<p>A <a href="schematron1-5.dtd">DTD</a> for Schematron1.5.
+If possible, please use your own local or cached copy.</p> 
+<p>We do not recommend using the DTD except for document
+creation, because some implementations of XSLT do not
+handle relative file location correctly.</p>
+<p>If you are not using namespace prefixes, put the following
+document type declaration at the top of your schema (after
+any XML declaration and stylesheet declaration):</p>
+<pre>
+&lt;!DOCTYPE schema PUBLIC "http://www.ascc.net/xml/schematron"
+   "http://www.ascc.net/xml/schematron/schematron1-5.dtd">
+</pre>
+<p>If you <emph>are</emph> using namespace prefixes, put the following
+document type declaration at the top of your schema (after
+any XML declaration and stylesheet declaration):</p>
+<pre>
+&lt;!DOCTYPE sch:schema PUBLIC "http://www.ascc.net/xml/schematron"
+   "http://www.ascc.net/xml/schematron/schematron1-5.dtd"
+[
+  &lt;!ENTITY % sp "sch:">
+]>
+</pre>
+</rddl:resource>
+</div>
+<div class="resource" id="tutorials">
+<h3>Guides, Tutorials and Articles</h3>
+<ul>
+<rddl:resource
+	   xlink:title="Mail List Archive"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.geocrawler.com/lists/3/SourceForge/6317/0/"
+	   >
+<li><a href="http://www.geocrawler.com/lists/3/SourceForge/6317/0/"
+>Mail archives</a> for the <b>Schematron Love-in</b></li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="Quick Guide"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.ascc.net/xml/resource/schematron/quick1-5.html"
+	   >
+<li><a href="http://www.ascc.net/xml/resource/schematron/quick1-5.html">Quick Reference Guide</a> by Rick Jelliffe, including
+simplified DTD and EBNF productions for paths and expressions. </li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="Article"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.ldodds.com/papers/schematron_xsltuk.html"
+	   >
+<li>Leigh Dodds' XSLT UK Conference paper <a 
+href="http://www.ldodds.com/papers/schematron_xsltuk.html"
+>Schematron: validating XML using XSLT</a>
+</li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="Article"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.xml.com/lpt/a/2000/11/22/schematron.html"
+	   >
+<li>XML.COM article <a 
+href="http://www.xml.com/lpt/a/2000/11/22/schematron.html"
+>validating XML with Schematron</a> 
+by FourThought's Chimezie Thomas-Ogbuji. </li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="Article"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.unixinsider.com/swol-09-2000/swol-0908-schematron.html"
+	   >
+<li>(Unavailable?) Sunworld article 
+<a href="http://uche.ogbuji.net/articles/schematron.xhtml"
+>Introducing the Schematron</a> 
+by FourThought's Uche Ogbuji. 
+Might be good place to start for XSLT people.</li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="ZVON Tutorial"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.zvon.org/xxl/SchematronTutorial/General/contents.html"
+	   >
+<li>ZVON <a href="http://www.zvon.org/xxl/SchematronTutorial/General/contents.html"
+>online tutorial</a> by Miloslav Nic. </li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="XMLHACK Interview"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.xmlhack.com/read.php?item=121"
+	   >
+<li>XMLHACK <a href="http://www.xmlhack.com/read.php?item=121">interview with Rick Jelliffe</a> by Simon StLaurent. </li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="Article"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.xml.com/pub/a/2000/11/08/perl/index.html"
+	   > 
+<li>XML.COM article <a 
+href="http://www.xml.com/pub/a/2000/11/08/perl/index.html"
+>Simple XML validation with Perl</a> by Kip Hampton. 
+Might be good place to start for Perl people.</li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="Article"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.xml.com/pub/a/2001/01/10/schemasincontext.html?page=5#influenced"
+	   >
+<li>XML.COM article <a 
+href="http://www.xml.com/pub/a/2001/01/10/schemasincontext.html?page=5#influenced">The W3C XML Schemas Specification In Context</a> by Rick Jelliffe. </li>
+</rddl:resource>
+<rddl:resource
+	   xlink:title="Article"
+	   xlink:arcrole="http://www.rddl.org/purposes#non-normative-reference"
+	   xlink:role="http://www.w3.org/TR/html4/"
+	   xlink:href="http://www.cobase.cs.ucla.edu/tech-docs/dongwon/ucla-200008.html"
+	   > 
+<li>UCLA paper <a 
+href="http://www.cobase.cs.ucla.edu/tech-docs/dongwon/ucla-200008.html"
+>Comparative Analysis of Six Schema Languages</a> by 
+Dongwon Lee and Wesley W. Chu from June 2000. </li>
+</rddl:resource>
+</ul>
+</div>
+<div id="footer">
+<hr />
+
+<p>Copyright 2001 (C) Rick Jelliffe, Academia Sinica Computing Centre,
+Taibei.
+</p>
+<p><font color="#FF0080"><strong>The Schematron</strong></font>
+software and this page are available for any public use, under
+the conditions of the zlib/libpng license (the least restrictive), 
+but please mention our names in
+any documentation or About screens for any products that uses it.
+Comments, fixes and upgrades welcome: email <a
+href="mailto:ricko@topologi.com">ricko@topologi.com</a></p>
+<table border="0" width="100%">
+    <tr>
+        <td width="50%"><p align="center"><a
+        href="http://www.sinica.edu.tw/"><font color="#FF0080"><img
+        src="http://www.sinica.edu.tw/images/cc/ascc.gif"
+        align="middle" border="0" width="177" height="116" /></font></a></p>
+        </td>
+        <td width="50%"><p align="center"><a href="http://www.ascc.net/xml"><font
+        color="#FF0080"><img src="http://www.ascc.net/xml/graphics/xml.gif"
+        align="middle" border="0" width="177" height="84" /></font></a></p>
+        </td>
+    </tr>
+</table>
+
+</div>
+</body>
+</html>
